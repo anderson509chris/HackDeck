@@ -1,3 +1,17 @@
-.venv/
-__pycache__/
-*.pyc
+# Python
+software/.venv/
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+
+# PlatformIO
+firmware/**/.pio/
+firmware/**/node_modules/
+
+# KiCad
+hardware/**/*.bak
+hardware/**/*-backups/
+
+# OS
+.DS_Store
+Thumbs.db
