@@ -1,0 +1,12 @@
+{
+    "python.defaultInterpreterPath": "/Users/chrisanderson/HackDeck/software/.venv/bin/python3",
+    "python.terminal.activateEnvironment": true,
+    "python.terminal.activateEnvInCurrentTerminal": true,
+    "terminal.integrated.profiles.osx": {
+        "zsh-venv": {
+            "path": "zsh",
+            "args": ["-c", "source /Users/chrisanderson/HackDeck/software/.venv/bin/activate && zsh"]
+        }
+    },
+    "terminal.integrated.defaultProfile.osx": "zsh-venv"
+}
