@@ -7,6 +7,7 @@ from PySide6.QtWidgets import (
 from PySide6.QtCore import Qt, QSize
 from PySide6.QtGui import QFont, QColor
 from modules.scope.scope_module import ScopeModule
+from modules.rf.rf_module import RFModule
 
 # ── Stylesheet ────────────────────────────────────────────────
 STYLE = """
@@ -231,7 +232,7 @@ class HackDeckShell(QMainWindow):
 
         # Register screens
         self._add_screen("home",    HomeScreen(self))
-        self._add_screen("rf",      PlaceholderScreen(self, "RF / SDR"))
+        self._add_screen("rf",      RFModule(self))
         self._add_screen("rfid",    PlaceholderScreen(self, "RFID / NFC"))
         self._add_screen("scope",   ScopeModule(self))
         self._add_screen("network", PlaceholderScreen(self, "Network"))
